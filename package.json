@@ -1,17 +1,17 @@
 {
-  "name": "style-guideline-react",
+  "name": "true-tmn-makro",
   "version": "0.0.1",
-  "description": "Style guideline react",
+  "description": "S9 True TMN Makro",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Nattarat/style-guideline-react.git"
+    "url": "ma"
   },
   "keywords": [
     "react",
     "starter",
     "ui"
   ],
-  "author": "Nattarat Srila",
+  "author": "S9",
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "7.1.6",
