@@ -3,21 +3,22 @@
 // ==================================================================================================
 //
 // Fonts (embed)
-// * XXXXX
-//   - XXXXX Regular
-//   - XXXXX Medium
-//   - XXXXX Bold
+// * Prompt
+//   - Prompt Regular
+//   - Prompt Medium
+//   - Prompt Bold
+// * Thonburi
+//   - Thonburi Regular
+//   - Thonburi Bold
 //
 // ==================================================================================================
 // //////////////////////////////////////////////////////////////////////////////////////////////////
 */
 
 /*
-// XXXXX
+// Regular
 // ============================================================
 */
-
-/* Regular */
 /* Prompt-Regular */
 @font-face {
   font-family: 'Prompt-Regular';
@@ -30,7 +31,7 @@
   font-style: normal;
 }
 
-/* Thonburi */
+/* Thonburi-Regular */
 @font-face {
   font-family: 'Thonburi';
   src: url('../fonts/thonburi/thonburi.eot');
@@ -42,7 +43,10 @@
   font-style: normal;
 }
 
-/* Medium */
+/*
+// Medium
+// ============================================================
+*/
 /* Prompt-Medium */
 @font-face {
   font-family: 'Prompt-Medium';
@@ -55,7 +59,10 @@
   font-style: normal;
 }
 
-/* Bold */
+/*
+// Bold
+// ============================================================
+*/
 /* Prompt-Bold */
 @font-face {
   font-family: 'Prompt-Bold';
