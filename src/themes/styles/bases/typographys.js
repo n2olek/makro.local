@@ -12,8 +12,25 @@ import {
 //
 // Using: ${TYPOGRAPHYS.FONT_STYLES.FIRST_REGULAR_MN};
 //
-// * First regular (XXXXX Regular)
-//   - FIRST_REGULAR_MN  (px)
+// * First regular (Thonburi Regular)
+//   - FIRST_REGULAR_LG   (48px) H1 Thai
+//
+// * Second regular (Prompt Regular)
+//   - SECOND_REGULAR_MN  (12px)  H5 Thai
+//   - SECOND_REGULAR_TN  (14px)  H4 Thai
+//   - SECOND_REGULAR_XXS (16px)  H3 Thai, H4 Thai Title
+//
+// * Second medium (Prompt Medium)
+//   - SECOND_MEDIUM_XS   (18px)  H3 Thai Title
+//   - SECOND_MEDIUM_SM   (20px)  H2 Thai Title
+//   - SECOND_MEDIUM_MD   (24px)  H1 Thai Title
+//
+// * Second bold (Prompt Bold)
+//   - SECOND_BOLD_MN     (12px)  H5 Thai
+//   - SECOND_BOLD_TN     (14px)  H4 Thai
+//   - SECOND_BOLD_XXS    (16px)  H3 Thai
+//   - SECOND_BOLD_XS     (18px)  H2 Thai
+//
 //
 // Notice: Color, Hover/Focus can set at Global or Scaffolding
 //
@@ -31,143 +48,115 @@ const TEXT_DEFAULT = css`
 export default {
   FONT_STYLES: {
     // First regular
-    // Thai
     // ============================================================
 
-    // Huge
-    // H1 : 48px
+    // Large
     // -------------------------------
-    FONT_FIRST_REGULAR_HG: css`
+    FIRST_REGULAR_LG: css`
       ${TEXT_DEFAULT}
       font-family: ${VARIABLES.FONT_FAMILIES.FIRST_REGULAR};
-      font-size: ${VARIABLES.FONT_SIZES.HG};
-      line-height: ${VARIABLES.LINE_HEIGHTS.HG};
+      font-size: ${VARIABLES.FONT_SIZES.LG};
+      line-height: ${VARIABLES.LINE_HEIGHTS.LG};
     `,
 
     // Second regular
-    // Thai
     // ============================================================
 
-    // Extra extra tiny
-    // H3 :16px
+    // Mini
     // -------------------------------
-    FONT_SECOND_REGULAR_TTN: css`
+    SECOND_REGULAR_MN: css`
       ${TEXT_DEFAULT}
       font-family: ${VARIABLES.FONT_FAMILIES.SECOND_REGULAR};
-      font-size: ${VARIABLES.FONT_SIZES.TTN};
-      line-height: ${VARIABLES.LINE_HEIGHTS.TTN};
+      font-size: ${VARIABLES.FONT_SIZES.MN};
+      line-height: ${VARIABLES.LINE_HEIGHTS.MN};
     `,
 
     // Tiny
-    // H4 :14px
     // -------------------------------
-    FONT_SECOND_REGULAR_TN: css`
+    SECOND_REGULAR_TN: css`
       ${TEXT_DEFAULT}
       font-family: ${VARIABLES.FONT_FAMILIES.SECOND_REGULAR};
       font-size: ${VARIABLES.FONT_SIZES.TN};
       line-height: ${VARIABLES.LINE_HEIGHTS.TN};
     `,
-
-    // Mini
-    // H5 :12px
-    // -------------------------------
-    FONT_SECOND_REGULAR_MN: css`
-      ${TEXT_DEFAULT}
-      font-family: ${VARIABLES.FONT_FAMILIES.SECOND_REGULAR};
-      font-size: ${VARIABLES.FONT_SIZES.TN};
-      line-height: ${VARIABLES.LINE_HEIGHTS.TN};
-    `,
-
-    // Second Bold
-    // Thai
-    // ============================================================
 
     // Extra extra small
-    // H2 :18px
     // -------------------------------
-    FONT_SECOND_BOLD_XXS: css`
+    SECOND_REGULAR_XXS: css`
       ${TEXT_DEFAULT}
-      font-family: ${VARIABLES.FONT_FAMILIES.SECOND_BOLD};
+      font-family: ${VARIABLES.FONT_FAMILIES.SECOND_REGULAR};
       font-size: ${VARIABLES.FONT_SIZES.XXS};
       line-height: ${VARIABLES.LINE_HEIGHTS.XXS};
     `,
 
-    // Extra extra tiny
-    // H3 :16px
-    // -------------------------------
-    FONT_SECOND_BOLD_TTN: css`
-      ${TEXT_DEFAULT}
-      font-family: ${VARIABLES.FONT_FAMILIES.SECOND_BOLD};
-      font-size: ${VARIABLES.FONT_SIZES.TTN};
-      line-height: ${VARIABLES.LINE_HEIGHTS.TTN};
-    `,
-
-    // Tiny
-    // H4 :14px
-    // -------------------------------
-    FONT_SECOND_BOLD_TN: css`
-      ${TEXT_DEFAULT}
-      font-family: ${VARIABLES.FONT_FAMILIES.SECOND_BOLD};
-      font-size: ${VARIABLES.FONT_SIZES.TN};
-      line-height: ${VARIABLES.LINE_HEIGHTS.TN};
-    `,
-
-    // Mini
-    // H5 :12px
-    // -------------------------------
-    FONT_SECOND_BOLD_MN: css`
-      ${TEXT_DEFAULT}
-      font-family: ${VARIABLES.FONT_FAMILIES.SECOND_BOLD};
-      font-size: ${VARIABLES.FONT_SIZES.TN};
-      line-height: ${VARIABLES.LINE_HEIGHTS.TN};
-    `,
-
-    // Second regular
-    // Thai Title
-    // ============================================================
-
-    // Extra extra tiny
-    // H4 :16px
-    // -------------------------------
-    FONT_SECOND_MEDIUM_TTN: css`
-      ${TEXT_DEFAULT}
-      font-family: ${VARIABLES.FONT_FAMILIES.SECOND_REGULAR};
-      font-size: ${VARIABLES.FONT_SIZES.TTN};
-      line-height: ${VARIABLES.LINE_HEIGHTS.TTN};
-    `,
 
     // Second medium
-    // Thai Title
     // ============================================================
 
-    // Huge
-    // H1 : 24px
-    // -------------------------------
-    FONT_SECOND_REGULAR_HG: css`
-      ${TEXT_DEFAULT}
-      font-family: ${VARIABLES.FONT_FAMILIES.SECOND_MEDIUM};
-      font-size: ${VARIABLES.FONT_SIZES.HG};
-      line-height: ${VARIABLES.LINE_HEIGHTS.HG};
-    `,
-
     // Extra small
-    // H2 : 20px
     // -------------------------------
-    FONT_SECOND_MEDIUM_XS: css`
+    SECOND_MEDIUM_XS: css`
       ${TEXT_DEFAULT}
       font-family: ${VARIABLES.FONT_FAMILIES.SECOND_MEDIUM};
       font-size: ${VARIABLES.FONT_SIZES.XS};
       line-height: ${VARIABLES.LINE_HEIGHTS.XS};
     `,
 
-    // Extra extra small
-    // H3 :18px
+    // Small
     // -------------------------------
-    FONT_SECOND_MEDIUM_XXS: css`
+    SECOND_MEDIUM_SM: css`
       ${TEXT_DEFAULT}
       font-family: ${VARIABLES.FONT_FAMILIES.SECOND_MEDIUM};
+      font-size: ${VARIABLES.FONT_SIZES.SM};
+      line-height: ${VARIABLES.LINE_HEIGHTS.SM};
+    `,
+
+    // Medium
+    // -------------------------------
+    SECOND_MEDIUM_MD: css`
+      ${TEXT_DEFAULT}
+      font-family: ${VARIABLES.FONT_FAMILIES.SECOND_MEDIUM};
+      font-size: ${VARIABLES.FONT_SIZES.MD};
+      line-height: ${VARIABLES.LINE_HEIGHTS.MD};
+    `,
+
+    // Second Bold
+    // ============================================================
+
+    // Mini
+    // -------------------------------
+    SECOND_BOLD_MN: css`
+      ${TEXT_DEFAULT}
+      font-family: ${VARIABLES.FONT_FAMILIES.SECOND_BOLD};
+      font-size: ${VARIABLES.FONT_SIZES.MN};
+      line-height: ${VARIABLES.LINE_HEIGHTS.MN};
+    `,
+
+    // Tiny
+    // -------------------------------
+    SECOND_BOLD_TN: css`
+      ${TEXT_DEFAULT}
+      font-family: ${VARIABLES.FONT_FAMILIES.SECOND_BOLD};
+      font-size: ${VARIABLES.FONT_SIZES.TN};
+      line-height: ${VARIABLES.LINE_HEIGHTS.TN};
+    `,
+
+    // Extra extra small
+    // -------------------------------
+    SECOND_BOLD_XXS: css`
+      ${TEXT_DEFAULT}
+      font-family: ${VARIABLES.FONT_FAMILIES.SECOND_BOLD};
       font-size: ${VARIABLES.FONT_SIZES.XXS};
       line-height: ${VARIABLES.LINE_HEIGHTS.XXS};
+    `,
+
+    // Extra small
+    // -------------------------------
+    SECOND_BOLD_XS: css`
+      ${TEXT_DEFAULT}
+      font-family: ${VARIABLES.FONT_FAMILIES.SECOND_BOLD};
+      font-size: ${VARIABLES.FONT_SIZES.XS};
+      line-height: ${VARIABLES.LINE_HEIGHTS.XS};
     `,
   }
 }

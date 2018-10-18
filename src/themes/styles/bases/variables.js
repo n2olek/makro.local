@@ -14,47 +14,34 @@
 // Factors (using in variables)
 // ============================================================
 const LINE_HEIGHT_FACTOR = '1.35'
-const PRIME_FACTOR = '1px'
 
 // Font sizes
-const FONT_SIZES_MN   =  '11px'
-const FONT_SIZES_TN   =  '13px'
-const FONT_SIZES_TTN  =  '15px'
-const FONT_SIZES_XXS  =  '17px'
-const FONT_SIZES_XS   =  '19px'
-const FONT_SIZES_SM   =  '23px'
-const FONT_SIZES_MD   =  '29px'
-const FONT_SIZES_LG   =  '31px'
-const FONT_SIZES_XL   =  '37px'
-const FONT_SIZES_XXL  =  '41px'
-const FONT_SIZES_BG   =  '43px'
-const FONT_SIZES_HG   =  '47px'
-const FONT_SIZES_MS   =  '53px'
+const FONT_SIZES_MN   =  '12px'
+const FONT_SIZES_TN   =  '14px'
+const FONT_SIZES_XXS  =  '16px'
+const FONT_SIZES_XS   =  '18px'
+const FONT_SIZES_SM   =  '20px'
+const FONT_SIZES_MD   =  '24px'
+const FONT_SIZES_LG   =  '48px'
 
 export default {
   // Font sizes
   // ..
   // Conventional size name:
   // ..
-  // Mini(MN) < Tiny(TN) < Extra extra tiny(TTN)
+  // Mini(MN) < Tiny(TN) <
   // Extra extra small(XXS) < Extra small(XS) < Small(SM) <
   // Medium(MD) < Large(LG) < Extra large(XL) < Extra extra large(XXL) <
   // Big(BG) < Huge(HG) < Massive(MS)
   // ============================================================
   FONT_SIZES: {
-    MN:   `calc(${FONT_SIZES_MN}  + ${PRIME_FACTOR})`,  // 12px
-    TN:   `calc(${FONT_SIZES_TN}  + ${PRIME_FACTOR})`,  // 14px //Alerts / Annotations
-    TTN:  `calc(${FONT_SIZES_TTN} + ${PRIME_FACTOR})`,  // 16px //Paragraph / Body
-    XXS:  `calc(${FONT_SIZES_XXS} + ${PRIME_FACTOR})`,  // 18px //Subheadline / Title bar
-    XS:   `calc(${FONT_SIZES_XS}  + ${PRIME_FACTOR})`,  // 20px
-    SM:   `calc(${FONT_SIZES_SM}  + ${PRIME_FACTOR})`,  // 24px //Depend
-    MD:   `calc(${FONT_SIZES_MD}  + ${PRIME_FACTOR})`,  // 30px //Depend
-    LG:   `calc(${FONT_SIZES_LG}  + ${PRIME_FACTOR})`,  // 32px //Main piont
-    XL:   `calc(${FONT_SIZES_XL}  + ${PRIME_FACTOR})`,  // 38px
-    XXL:  `calc(${FONT_SIZES_XXL} + ${PRIME_FACTOR})`,  // 42px
-    BG:   `calc(${FONT_SIZES_BG}  + ${PRIME_FACTOR})`,  // 44px
-    HG:   `calc(${FONT_SIZES_HG}  + ${PRIME_FACTOR})`,  // 48px
-    MS:   `calc(${FONT_SIZES_MS}  + ${PRIME_FACTOR})`,  // 54px
+    MN:   FONT_SIZES_MN,  // 12px
+    TN:   FONT_SIZES_TN,  // 14px //Alerts / Annotations
+    XXS:  FONT_SIZES_XXS, // 16px //Paragraph / Body
+    XS:   FONT_SIZES_XS,  // 18px //Subheadline / Title bar
+    SM:   FONT_SIZES_SM,  // 20px //Depend
+    MD:   FONT_SIZES_MD,  // 24px //Depend
+    LG:   FONT_SIZES_LG,  // 48px //Banner
   },
 
   // Line heights
@@ -67,19 +54,13 @@ export default {
   // Big(BG) < Huge(HG) < Massive(MS)
   // ============================================================
   LINE_HEIGHTS: {
-    MN:   `calc((${FONT_SIZES_MN}  + ${PRIME_FACTOR})  * ${LINE_HEIGHT_FACTOR})`,  // 16.2px
-    TN:   `calc((${FONT_SIZES_TN}  + ${PRIME_FACTOR})  * ${LINE_HEIGHT_FACTOR})`,  // 18.9px //Alerts / Annotations
-    TTN:  `calc((${FONT_SIZES_TTN} + ${PRIME_FACTOR})  * ${LINE_HEIGHT_FACTOR})`,  // 21.6px //Paragraph / Body
-    XXS:  `calc((${FONT_SIZES_XXS} + ${PRIME_FACTOR})  * ${LINE_HEIGHT_FACTOR})`,  // 24.3px //Subheadline / Title bar
-    XS:   `calc((${FONT_SIZES_XS}  + ${PRIME_FACTOR})  * ${LINE_HEIGHT_FACTOR})`,  // 27px
-    SM:   `calc((${FONT_SIZES_SM}  + ${PRIME_FACTOR})  * ${LINE_HEIGHT_FACTOR})`,  // 32.4px //Depend
-    MD:   `calc((${FONT_SIZES_MD}  + ${PRIME_FACTOR})  * ${LINE_HEIGHT_FACTOR})`,  // 40.5px //Depend
-    LG:   `calc((${FONT_SIZES_LG}  + ${PRIME_FACTOR})  * ${LINE_HEIGHT_FACTOR})`,  // 43.2px //Main piont
-    XL:   `calc((${FONT_SIZES_XL}  + ${PRIME_FACTOR})  * ${LINE_HEIGHT_FACTOR})`,  // 51.3px
-    XXL:  `calc((${FONT_SIZES_XXL} + ${PRIME_FACTOR})  * ${LINE_HEIGHT_FACTOR})`,  // 56.7px
-    BG:   `calc((${FONT_SIZES_BG}  + ${PRIME_FACTOR})  * ${LINE_HEIGHT_FACTOR})`,  // 59.4px
-    HG:   `calc((${FONT_SIZES_HG}  + ${PRIME_FACTOR})  * ${LINE_HEIGHT_FACTOR})`,  // 64.8px
-    MS:   `calc((${FONT_SIZES_MS}  + ${PRIME_FACTOR})  * ${LINE_HEIGHT_FACTOR})`,  // 72.9px
+    MN:   `calc(${FONT_SIZES_MN}  *  ${LINE_HEIGHT_FACTOR})`,  // 16.2px
+    TN:   `calc(${FONT_SIZES_TN}  *  ${LINE_HEIGHT_FACTOR})`,  // 18.9px
+    XXS:  `calc(${FONT_SIZES_XXS} *  ${LINE_HEIGHT_FACTOR})`,  // 21.6px
+    XS:   `calc(${FONT_SIZES_XS}  *  ${LINE_HEIGHT_FACTOR})`,  // 24.3px
+    SM:   `calc(${FONT_SIZES_SM}  *  ${LINE_HEIGHT_FACTOR})`,  // 27px
+    MD:   `calc(${FONT_SIZES_MD}  *  ${LINE_HEIGHT_FACTOR})`,  // 32.4px
+    LG:   `calc(${FONT_SIZES_LG}  *  ${LINE_HEIGHT_FACTOR})`,  // 64.8px
   },
 
   // Colors
@@ -123,10 +104,10 @@ export default {
   // because long and difficult spelling.
   // ============================================================
   FONT_FAMILIES: {
-    FIRST_REGULAR: 'Thonburi',
-    FIRST_BOLD: 'Thonburi-Bold',
+    FIRST_REGULAR:  'Thonburi',
+    FIRST_BOLD:     'Thonburi-Bold',
     SECOND_REGULAR: 'Prompt-Regular',
-    SECOND_MEDIUM: 'Prompt-Medium',
-    SECOND_BOLD: 'Prompt-Bold',
+    SECOND_MEDIUM:  'Prompt-Medium',
+    SECOND_BOLD:    'Prompt-Bold',
   },
 }
