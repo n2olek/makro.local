@@ -1,9 +1,12 @@
 import {
   injectGlobal
 } from 'styled-components'
-// import {
-//   default as VARIABLES
-// } from './variables' // Use relative path for React Styleguidist
+import {
+  default as TYPOGRAPHYS
+} from './typographys' // Use relative path for React Styleguidist
+import {
+  default as VARIABLES
+} from './variables'
 
 // //////////////////////////////////////////////////////////////////////////////////////////////////
 // ==================================================================================================
@@ -25,6 +28,8 @@ injectGlobal`
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    ${TYPOGRAPHYS.FONT_STYLES.SECOND_REGULAR_XXS}
+    color: ${VARIABLES.COLORS.GRAY_1};
   }
 
   * {
@@ -38,10 +43,12 @@ injectGlobal`
   h5,
   h6 {
     font-weight: normal; /* Reset for Embed font */
+    color: ${VARIABLES.COLORS.GRAY_3};
   }
 
   a {
     text-decoration: none;
+    color: ${VARIABLES.COLORS.BLUE};
 
     &:hover {}
 
